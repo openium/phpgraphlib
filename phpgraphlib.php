@@ -984,7 +984,7 @@ class PHPGraphLib {
 		}
 		$this->lowest_x = $low_x;
 		$this->highest_x = $high_x;
-		$raw_size = $high_x - $low_x +1;
+		$raw_size = $data[$high_x] - $data[$low_x] +1;
 		if ($raw_size > $this->data_count) {
 			$this->data_count = $raw_size;
 		}
